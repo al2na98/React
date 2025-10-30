@@ -1,17 +1,20 @@
 import React, {Component} from "react";
 
 class App extends Component {
-    state = {
+  constructor() {
+    super();
+    
+    this.state = {
       count: 0
     };
+
+    this.handleClick = this.handleClick.bind(this);
+  }
     
-    handleClick = () => {
-      // this.state.count++; //не работает так (состояние не обновится)
+    //метод
+    handleClick(){
+      
       this.setState({count: this.state.count + 1})
-      //при одном нажатиии count = 3
-      // this.setState((prevState) => ({count: prevState.count + 1}))
-      // this.setState((prevState) => ({count: prevState.count + 1}))
-      // this.setState((prevState) => ({count: prevState.count + 1}))
     }
     
     render() {
