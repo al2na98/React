@@ -9,7 +9,7 @@ function Movie(props) {
         Poster 
     } = props;
 
-        return <div class="card">
+        return <div id={imdbID} class="card movie">
             <div class="card-image waves-effect waves-block waves-light">
             {
                 Poster === 'N/A' ? (
