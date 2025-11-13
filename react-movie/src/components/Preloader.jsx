@@ -1,7 +1,9 @@
-function Preloader () {
-    return <div class="progress">
-      <div class="indeterminate"></div>
-    </div>
+function Preloader() {
+    return (
+        <div className="progress">
+            <div className="indeterminate"></div>
+        </div>
+    );
 }
 
-export {Preloader}
+export { Preloader };
